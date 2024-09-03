@@ -1,0 +1,67 @@
+.loginSection{
+    position: absolute;
+    width: 102%;
+    left: -1%;
+    height: 98%;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 10% 0;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    .loginSection__title{
+        padding-left: 10%;
+        width: 100%;
+        border-left: 6px solid black;
+        font-size: 4.5vh;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: rgb(17, 17, 17);
+    }
+    .authenticationForm{
+        height: 80%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .authenticationForm__atribute{
+            height: 7vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            .authenticationForm__label{
+                font-size: 3vh;
+                color: rgb(55, 55, 55);
+                font-weight: 500;
+            }
+            .authenticationForm__input{
+                border-bottom: 1px solid rgb(55, 55, 55);
+                height: 50%;
+                opacity: 0.5;
+                background-color: transparent;
+                font-size: 1.5vh;
+                width: 100%;
+                z-index: 1;
+            }
+            .authenticationForm__input:focus{
+                animation: authenticationForm__inputFocus 1.5s alternate forwards;
+            }
+        }
+    }
+}
+
+@keyframes authenticationForm__inputFocus{
+    from{
+        width: 0;
+    }
+    100%{
+        border-bottom: 1px solid     black;
+        opacity: 1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+.band{
+    background-color: #3d3d3da9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+    width: 100%;
+    font-family: Jura;
+    z-index: 4;
+}
+.band__title{
+    font-size: 2vh;
+    color: white;
+    letter-spacing: 7px;
+}

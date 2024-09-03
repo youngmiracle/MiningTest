@@ -1,0 +1,17 @@
+.levelList__exampleLvlBlock{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 0 5%;
+    box-shadow: 1px 1px 5px 1px rgb(57, 57, 57);
+}
+.exampleLvlBlock__title{
+    width: 40%;
+    text-align: center;
+    font-size: 2.5vh;
+}

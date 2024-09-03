@@ -1,0 +1,75 @@
+.header__link{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.5vh;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-image: linear-gradient(100deg, #ffffff, #b9b9b9, #363636, #131313);
+    border-image-slice: 1;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    position: relative;
+}
+.header__link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: black;
+    background: linear-gradient(100deg, #ffffff, #b9b9b9, #363636, #0c0c0c);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+  }
+.header__link:hover{
+    background: rgba(255, 255, 255, 0);
+    color: black;
+    font-weight: 500;
+}
+.header__link:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+.levelLink{
+  width: 40%;
+  height: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  background-color: rgb(29, 29, 29);
+  border-image: linear-gradient(100deg, #e4e4e4, #b9b9b9, #ffffff, #333333);
+  border-image-slice: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
+}
+.levelLink:hover{
+  animation: levelLinkHover 1.5s infinite forwards;
+}
+
+@keyframes levelLinkHover {
+  from{
+    border-image: linear-gradient(100deg, #363636, #b9b9b9, #ffffff, #0a0a0a);
+    border-image-slice: 1;
+  }
+  50%{
+    border-image: linear-gradient(300deg, #ffffff, #181818, #767676, #ffffff);;
+    border-image-slice: 1;
+    background-color: rgb(9, 9, 9);
+  }
+  100%{
+    border-image: linear-gradient(50deg, #363636, #b9b9b9, #ffffff, #0a0a0a);
+    border-image-slice: 1;
+    
+  }
+}

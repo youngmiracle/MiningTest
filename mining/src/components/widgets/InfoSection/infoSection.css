@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*Информационный блок сайта*/
+.InformationAboutSite {
+  color: black;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.InformationAboutSite .InformationAboutSiteAside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7% 7%;
+}
+.InformationAboutSite .InformationAboutSiteAside .InformationAboutSiteAside__title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", serif;
+  font-size: 3.5vh;
+  font-weight: 400;
+  letter-spacing: 10px;
+  width: 80%;
+  padding-bottom: 8%;
+}
+.InformationAboutSite .InformationAboutSiteAside .InformationAboutSiteAside__text {
+  font-size: 2vh;
+  letter-spacing: 2px;
+}
+.InformationAboutSite .InformationAboutSiteAside .InformationAboutSiteAside__langList {
+  font-size: 2vh;
+  line-height: 2.5vh;
+  font-weight: 800;
+  padding-top: 2%;
+}
+.InformationAboutSite .InformationAboutSiteAside li {
+  font-weight: 500;
+  list-style-type: none;
+  padding-left: 30px;
+  background: url(../../assets/images/galochka.png) no-repeat;
+  background-size: contain;
+}
+.InformationAboutSite .InformationAboutSiteNav {
+  z-index: 1;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 75%;
+  height: 40%;
+  bottom: 0;
+}
+.InformationAboutSite .InformationAboutSiteNav .InformationAboutSiteNav__imageNav {
+  width: 25%;
+  height: 100%;
+}
+.InformationAboutSite .InformationAboutSiteNav__phon {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}

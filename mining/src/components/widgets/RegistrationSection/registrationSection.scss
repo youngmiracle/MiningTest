@@ -1,0 +1,57 @@
+.registrationSection{
+    background-color: rgb(55, 55, 55);
+    z-index: 3;
+    opacity: 0;
+    animation: registrationSectionOpen 3s alternate forwards;
+    .registrationSection__title{
+        color: white;
+        border-left: 6px solid white;
+    }
+    .authenticationForm{
+        display: flex;
+        justify-content: space-between;
+        .authenticationForm__atribute{
+            .authenticationForm__labelRegistration{
+                color: white;
+            }
+            .authenticationForm__inputReg{
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+}
+.regZIndex{
+    z-index: 0;
+}
+.registrationSectionClose{
+    animation: registrationSectionClose 3s alternate forwards;
+}
+
+@keyframes registrationSectionOpen {
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        z-index: 3;
+    }
+}
+@keyframes registrationSectionClose {
+    from{
+        opacity: 1;
+        z-index: 3;
+    }
+    45%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        z-index: 0;
+        opacity: 0;
+    }
+}

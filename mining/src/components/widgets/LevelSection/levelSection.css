@@ -1,0 +1,296 @@
+.LevelSection {
+  padding-top: 10vh;
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: linear-gradient(50deg, rgb(16, 16, 16) 11%, rgb(200, 200, 200) 93%);
+}
+.LevelSection .LevelSection__levelList {
+  background-color: rgba(0, 0, 0, 0.337);
+  -webkit-animation: levelListHoverBack 1s ease;
+          animation: levelListHoverBack 1s ease;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+  max-height: 70vh;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 0 5%;
+  z-index: 1;
+}
+.LevelSection .LevelSection__levelList:hover {
+  -webkit-animation: levelListHover 0.5s alternate forwards;
+          animation: levelListHover 0.5s alternate forwards;
+}
+.LevelSection .LevelSection__background {
+  width: 100%;
+  height: 100%;
+  left: 25%;
+  z-index: -1;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+}
+.LevelSection .LevelSection__backgroundSecond {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+.LevelSection .LevelSection__informationContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 5%;
+  width: 35%;
+  height: 70vh;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection {
+  background-color: rgb(18, 18, 18);
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection .aboutLangSection__logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 25%;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection .aboutLangSection__title {
+  margin-bottom: 2%;
+  font-size: 2vh;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: Jura;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection .aboutLangSection__description {
+  text-align: center;
+  font-size: 1.5vh;
+  letter-spacing: 1px;
+  line-height: 2vh;
+  max-width: 90%;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection .aboutLangSection__href {
+  background-color: white;
+  color: black;
+  width: 25%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  border-radius: 3px;
+  margin: 2%;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection:hover {
+  -webkit-animation: aboutLangSectionHover 0.5s ease forwards;
+          animation: aboutLangSectionHover 0.5s ease forwards;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection:hover .aboutLangSection__title {
+  -webkit-animation: aboutLangSectionHoverText 0.5s alternate forwards;
+          animation: aboutLangSectionHoverText 0.5s alternate forwards;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection:hover .aboutLangSection__description {
+  -webkit-animation: aboutLangSectionHoverText 0.5s alternate forwards;
+          animation: aboutLangSectionHoverText 0.5s alternate forwards;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__aboutLangSection:hover .aboutLangSection__href {
+  -webkit-animation: aboutLangSectionHoverHref 0.5s alternate forwards;
+          animation: aboutLangSectionHoverHref 0.5s alternate forwards;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__lvlStatisticsBlock {
+  background-color: rgb(18, 18, 18);
+  height: 40%;
+  padding-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__lvlStatisticsBlock .lvlStatisticsBlock__personalData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30%;
+  width: 90%;
+  margin: 0 auto;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__lvlStatisticsBlock .lvlStatisticsBlock__personalData .lvlStatisticsBlock__avatar {
+  max-width: 20%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__lvlStatisticsBlock .lvlStatisticsBlock__personalData .lvlStatisticsBlock__name {
+  font-size: 2vh;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgb(87, 87, 87);
+}
+.LevelSection .LevelSection__informationContent .LevelSection__lvlStatisticsBlock .lvlStatisticsBlock__statisticsSection {
+  width: 90%;
+  height: 70%;
+  padding: 0 1%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.LevelSection .LevelSection__informationContent .LevelSection__lvlStatisticsBlock:hover .lvlStatisticsBlock__statisticsSection {
+  -webkit-animation: aboutLangSectionHover 0.5s alternate forwards;
+          animation: aboutLangSectionHover 0.5s alternate forwards;
+}
+
+@-webkit-keyframes levelListHoverBack {
+  from {
+    background-color: rgba(0, 0, 0, 0.869);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.337);
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
+}
+
+@keyframes levelListHoverBack {
+  from {
+    background-color: rgba(0, 0, 0, 0.869);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.337);
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
+}
+@-webkit-keyframes levelListHover {
+  100% {
+    background-color: rgba(0, 0, 0, 0.869);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+  }
+}
+@keyframes levelListHover {
+  100% {
+    background-color: rgba(0, 0, 0, 0.869);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+  }
+}
+@-webkit-keyframes aboutLangSectionHover {
+  100% {
+    background-color: rgba(161, 161, 161, 0.493);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    border-radius: 7px;
+  }
+}
+@keyframes aboutLangSectionHover {
+  100% {
+    background-color: rgba(161, 161, 161, 0.493);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    border-radius: 7px;
+  }
+}
+@-webkit-keyframes aboutLangSectionHoverText {
+  100% {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+}
+@keyframes aboutLangSectionHoverText {
+  100% {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+}
+@-webkit-keyframes aboutLangSectionHoverHref {
+  100% {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+}
+@keyframes aboutLangSectionHoverHref {
+  100% {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+}
+.LevelSectionReverse {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}

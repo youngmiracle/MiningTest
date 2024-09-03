@@ -1,0 +1,17 @@
+.lvlExampleResult{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 0;
+    .lvlExampleResult__text{
+        font-size: 2vh;
+        letter-spacing: 1px;
+    }
+    .scaleBlock{
+        min-width: 60%;
+        height: 100%;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+}

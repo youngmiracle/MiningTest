@@ -1,0 +1,127 @@
+.swapModeBtn{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: -15%;
+    top: 10%;
+    border-radius: 50%;
+    z-index: 10;
+    background-color: rgb(55, 55, 55);
+    .swapBtn__wand{
+        position: absolute;
+        width: 3%;
+        height: 30%;
+        top: 35%;
+        margin-left: 48.5%;
+        background-color: white;
+    }
+    .swapBtn__wandSecond{
+        transform: rotate(90deg);
+    }
+    .swapBtn__wandNone{
+        animation: swapBtn__wandNoneAnimation 2.8s alternate forwards;
+    }
+    .swapBtn__wandNoneClose{
+        animation: swapBtn__wandNoneAnimationClose 2.8s alternate forwards;
+    }
+}
+.swapModeBtnOpen{
+    animation: swapModeBtnOpen 3s alternate forwards;
+}
+.swapModeBtnClose{
+    animation: swapModeBtnClose 3s alternate forwards;
+}
+
+@keyframes swapBtn__wandNoneAnimation {
+    25%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    91%{
+        opacity: 0.1;
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+}
+@keyframes swapBtn__wandNoneAnimationClose {
+    from{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+        background-color: rgb(55, 55, 55);
+    }
+    60%{
+        opacity: 1;
+        background-color: rgb(136, 136, 136);
+        transform: rotate(1000deg);
+    }
+    100%{
+        background-color: white;
+        opacity: 1;
+    }
+}
+
+@keyframes swapModeBtnOpen {
+    25%{
+        right: 35%;
+        top: 10%;
+        width: 30%;
+        height: 30%;
+    }
+    50%{
+        background-color: rgb(55, 55, 55);
+        z-index: 10;
+        right: -1%;
+        top: 2%;
+        border-radius: 15px;
+        width: 102%;
+        height: 98%;
+    }
+    80%{
+        background-color: white;
+    }
+    100%{
+        right: 5%;
+        top: 7.5%;
+        width: 15%;
+        height: 15%;
+    }
+}
+
+@keyframes swapModeBtnClose {
+    from{
+        right: 5%;
+        top: 7.5%;
+        width: 15%;
+        height: 15%;
+    }
+    50%{
+        z-index: 10;
+        right: -1%;
+        top: 2%;
+        border-radius: 15px;
+        width: 102%;
+        height: 98%;
+    }
+    75%{
+        right: 35%;
+        top: 35%;
+        width: 30%;
+        height: 30%;
+    }
+    100%{
+        width: 30%;
+        height: 30%;
+        right: -15%;
+        top: 10%;
+        border-radius: 50%;
+        z-index: 10;
+    }
+}

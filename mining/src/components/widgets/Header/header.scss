@@ -1,0 +1,45 @@
+header{
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    padding: 2vh 15%;
+    height: 10vh;
+    overflow: hidden;
+    box-shadow: 0.5px 0.5px 10px 0.5px white;
+    background-color: rgb(9, 9, 9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .header__logo{
+        object-fit: contain;
+        width: 100%;
+        height: 115%;
+    }
+    .header__nav{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
+.headerScroll{
+    animation: scrollHeader 0.7s alternate forwards;
+}
+.headerScrollBack{
+    animation: scrollHeaderBack 1s alternate forwards;
+}
+@keyframes scrollHeader {
+    100%{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+@keyframes scrollHeaderBack {
+    from{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    100%{
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,55 @@
+.nav__blocklang{
+    width: 25%;
+    height: 100%;
+    background-color: #252525;
+    border: 0.5px rgb(85, 85, 85) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav__blocklang:hover{
+    animation: hoverCardLanguage 0.3s alternate forwards;
+}
+.infNav__img {
+    height: 55%;
+    margin-top: 5%;
+}
+.navInf__title {
+    font-size: 3vh;
+    margin-bottom: 15%;
+    font-weight: 500;
+}
+.navInf__go{
+    width: 50%;
+    height: 10%;
+    margin-bottom: 15%;
+    background-color: white;
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+.navInf__go:hover{
+    animation: hoverCardBtn 0.3s alternate forwards;
+}
+@keyframes hoverCardLanguage {
+    50%{
+        background-color: #000;
+        
+    }
+    100%{
+        background-color: #161616;
+        border: #000 3px solid;
+    }
+}
+@keyframes hoverCardBtn {
+    100%{
+        font-size: 1.7vh;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}

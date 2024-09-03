@@ -1,0 +1,98 @@
+.loginSection {
+  position: absolute;
+  width: 102%;
+  left: -1%;
+  height: 98%;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 10% 0;
+  overflow: hidden;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+.loginSection .loginSection__title {
+  padding-left: 10%;
+  width: 100%;
+  border-left: 6px solid black;
+  font-size: 4.5vh;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(17, 17, 17);
+}
+.loginSection .authenticationForm {
+  height: 80%;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.loginSection .authenticationForm .authenticationForm__atribute {
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.loginSection .authenticationForm .authenticationForm__atribute .authenticationForm__label {
+  font-size: 3vh;
+  color: rgb(55, 55, 55);
+  font-weight: 500;
+}
+.loginSection .authenticationForm .authenticationForm__atribute .authenticationForm__input {
+  border-bottom: 1px solid rgb(55, 55, 55);
+  height: 50%;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 1.5vh;
+  width: 100%;
+  z-index: 1;
+}
+.loginSection .authenticationForm .authenticationForm__atribute .authenticationForm__input:focus {
+  -webkit-animation: authenticationForm__inputFocus 1.5s alternate forwards;
+          animation: authenticationForm__inputFocus 1.5s alternate forwards;
+}
+
+@-webkit-keyframes authenticationForm__inputFocus {
+  from {
+    width: 0;
+  }
+  100% {
+    border-bottom: 1px solid black;
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes authenticationForm__inputFocus {
+  from {
+    width: 0;
+  }
+  100% {
+    border-bottom: 1px solid black;
+    opacity: 1;
+    width: 100%;
+  }
+}

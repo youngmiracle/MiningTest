@@ -1,0 +1,92 @@
+.registrationSection {
+  background-color: rgb(55, 55, 55);
+  z-index: 3;
+  opacity: 0;
+  -webkit-animation: registrationSectionOpen 3s alternate forwards;
+          animation: registrationSectionOpen 3s alternate forwards;
+}
+.registrationSection .registrationSection__title {
+  color: white;
+  border-left: 6px solid white;
+}
+.registrationSection .authenticationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.registrationSection .authenticationForm .authenticationForm__atribute .authenticationForm__labelRegistration {
+  color: white;
+}
+.registrationSection .authenticationForm .authenticationForm__atribute .authenticationForm__inputReg {
+  border-bottom: 1px solid white;
+}
+
+.regZIndex {
+  z-index: 0;
+}
+
+.registrationSectionClose {
+  -webkit-animation: registrationSectionClose 3s alternate forwards;
+          animation: registrationSectionClose 3s alternate forwards;
+}
+
+@-webkit-keyframes registrationSectionOpen {
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: 3;
+  }
+}
+
+@keyframes registrationSectionOpen {
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@-webkit-keyframes registrationSectionClose {
+  from {
+    opacity: 1;
+    z-index: 3;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}
+@keyframes registrationSectionClose {
+  from {
+    opacity: 1;
+    z-index: 3;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}
